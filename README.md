@@ -3,3 +3,5 @@ A work-in-progress, interactive Discord bot. Focused on collectible cards, earne
 
 ### External links
 [*Link to TSU trello*](https://trello.com/b/vQL17gqQ/trivia-side-up-bot "Trivia Side Up Trello Page")
+
+⋅⋅⋅Vega Paradox, 5/12/20⋅⋅⋅
