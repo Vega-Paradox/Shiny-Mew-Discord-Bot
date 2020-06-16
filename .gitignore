@@ -1,0 +1,5 @@
+node_modules/
+TSU Workspace.code-workspace
+package-lock.json
+.env
+start.bat

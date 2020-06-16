@@ -1,0 +1,32 @@
+{
+  "name": "vp_triviasideupbot",
+  "version": "0.0.1",
+  "description": "Discord bot with collectible cards earnable through trivia!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "arrowhead",
+    "bot"
+  ],
+  "author": "vega",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vega-Paradox/Trivia-Side-Up-Discord-Bot"
+  },
+  "bugs": {
+    "url": "https://github.com/Vega-Paradox/Trivia-Side-Up-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/Vega-Paradox/Trivia-Side-Up-Discord-Bot",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "canvas": "^2.6.1",
+    "discord.js": "^11.5.1",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^8.1.0",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.15"
+  }
+}
