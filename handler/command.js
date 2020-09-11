@@ -2,7 +2,7 @@ const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
 
 // Create a new Ascii table
-let table = new ascii("Loaded Command");
+let table = new ascii("Loaded Command Modules");
 table.setHeading("Parent Directory", "Filename", "CMD Category", "Load status");
 
 module.exports = (client) => {
@@ -19,14 +19,14 @@ module.exports = (client) => {
             
             if (pull.name && pull.category) {
                 client.commands.set(pull.name, pull);
-                table.addRow(`${dir}`, `${file}`, `${pull.category}`, `✔ [OK]`);
+                table.addRow(`${dir}`, `${file}`, `${pull.category}`, `⯈ [OK]`);
             } else {
-                table.addRow(`${dir}`, `${file}`, `${pull.category}`, `✗ [ERR]➡ can't find file.name or file.category`);
+                table.addRow(`${dir}`, `${file}`, `${pull.category}`, `⚠ [ERR]➡ can't find file.name or file.category`);
                 continue;
             }
     
-            // If there's an aliases key, read the aliases. // Disabled for TSU
-            // if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
+            // If there's an aliases key, read the aliases.
+            if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
         }
     });
     // Log the table

@@ -18,19 +18,19 @@ config({
 });
 
 client.on("ready", () => {
-    console.log("Someone call for eggs sunny-side up?");
+    console.log("⯈ A wild shiny mew appears!");
 
     client.user.setPresence({
         status: "online",
         game: {
-            name: "out for new cards!",
+            name: "out for rare pokemon!",
             type: "WATCHING"
         }
     });
 });
 
 client.on("message", async message => {
-    const prefix = "?";
+    const prefix = "$m";
 
     if (message.author.bot) return;
     if (!message.guild) return;
